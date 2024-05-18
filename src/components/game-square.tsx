@@ -1,6 +1,7 @@
 import { DEFAULT_SQUARE_SIZE_IN_PX } from "@/constants";
 import GameCell from "./game-cell";
-import { getGlobalX, getGlobalY } from "@/app/page";
+import { getGlobalX } from "@/utils/getGlobalX";
+import { getGlobalY } from "@/utils/getGlobalY";
 
 interface GamePieceProps {
   numbers: number[][];
