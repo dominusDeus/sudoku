@@ -13,7 +13,7 @@ export default function Home() {
 
   const initialBoard = getInitialBoard();
 
-  const test = (x: number, y: number, id: number) => {
+  const onClickCell = (x: number, y: number, id: number) => {
     const globalX = getGlobalX(x, id);
     const globalY = getGlobalY(y, id);
 
@@ -44,7 +44,7 @@ export default function Home() {
                   key="test"
                   numbers={square}
                   id={i}
-                  onClickCell={(x, y) => test(x, y, i)}
+                  onClickCell={(x, y) => onClickCell(x, y, i)}
                   selectedCell={cellSelected}
                 />
               );
